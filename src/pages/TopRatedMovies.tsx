@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useState } from "react";
 import { useMovies } from "../hooks/useMovies";
 import MovieCard from "../components/MovieCard";
 import SortMovies from "../components/SortMovies";

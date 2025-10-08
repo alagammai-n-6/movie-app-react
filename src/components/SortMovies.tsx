@@ -1,6 +1,12 @@
 import React, { useState } from "react";
+import type { Movie } from "../api/api";
 
-const SortMovies = ({ movieArray, setSortedArr }) => {
+interface sortMovieProps {
+  movieArray: Movie[];
+  setSortedArr: React.Dispatch<React.SetStateAction<Movie[]>>;
+}
+
+const SortMovies: React.FC<sortMovieProps> = ({ movieArray, setSortedArr }) => {
   const [sortType, setSortType] = useState("asc");
 
   const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {

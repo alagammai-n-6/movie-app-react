@@ -1,4 +1,4 @@
-import React, { use, useEffect, useState } from "react";
+import React from "react";
 import type { Movie } from "../api/api";
 import { formatDate } from "../utils/formatDate";
 import { Heart } from "lucide-react";
@@ -16,7 +16,7 @@ const MovieCard: React.FC<Props> = ({ movies, filteredMovie }) => {
 
   // useEffect(() => {
   //   console.log("Updated favorites:", favorites);
-// }, [favorites]);
+  // }, [favorites]);
 
   const toggleFavorite = (movie: Movie) => {
     setFavorites((prev) => {

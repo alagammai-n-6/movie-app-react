@@ -9,6 +9,7 @@ export interface Movie {
     release_date: string;
     title: string;
     vote_count: number;
+    vote_average: number;
 }
 
 
